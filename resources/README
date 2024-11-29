@@ -1,0 +1,52 @@
+# Gestão de Selos
+
+> **Resumo**: Realizar a gestão de selos para vendedores.
+
+---
+
+## 📋 Pré-requisitos
+
+Certifique-se de que você tem os seguintes itens instalados antes de começar:
+
+- PHP (versão 7.4 ou superior)
+- Composer
+- Git
+- Laravel (Instalado via Composer)
+---
+
+## 🚀 Passo a Passo para Configuração
+
+### 1. Clone o Repositório
+
+```bash
+git clone https://github.com/WILLOSU/gestao-selos.git
+cd D:\gestao-selos
+
+# Inicio do do Projeto Primeiro, crie um novo projeto Laravel:
+ - composer create-project laravel/laravel gestao-selos
+
+ ## Instalação do ambiente
+ 
+ - composer install
+ - composer create-project laravel/laravel 
+ - cd gestao-selos
+
+## criando tabelas
+
+- TABELA VENDEDORES php artisan make:migration create_vendedores_table
+- TABELA SELOS      php artisan make:migration create_selos_table
+
+## criando relacionamentos
+
+- php artisan make:model Vendedor
+- php artisan make:model Selo
+
+## criando a Regra de Negócio
+
+- não executei nenhum comando criei a pasta;
+  app/Services/SelosService.php
+  criando apenas a pasta;
+  mkdir -p app/Services
+  touch app/Services/SelosService.php
+
+
