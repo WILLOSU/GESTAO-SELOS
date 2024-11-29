@@ -65,3 +65,46 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # GESTAO-SELOS
+
+# Gestão de Selos
+
+> **Resumo**: Realizar a gestão de selos para vendedores.
+
+---
+
+## 📋 Pré-requisitos
+
+Certifique-se de que você tem os seguintes itens instalados antes de começar:
+
+- PHP (versão 7.4 ou superior)
+- Composer
+- Git
+- Laravel (Instalado via Composer)
+---
+
+## 🚀 Passo a Passo para Configuração
+
+### 1. Clone o Repositório
+
+```bash
+git clone https://github.com/WILLOSU/GESTAO-SELOS.git
+
+
+cd D:\gestao-selos
+
+# Inicio do do Projeto Primeiro, crie um novo projeto Laravel:
+ - composer create-project laravel/laravel 
+ - cd laravel
+
+ ## Criação de Tabelas
+
+ - php artisan make:migration create_vendedores_table
+ - php artisan make:migration create_selos_table
+
+ 
+ ## Criação dos Relacionamentos
+
+ - php artisan make:controller VendedorController
+-  php artisan make:controller SeloController
+
+
