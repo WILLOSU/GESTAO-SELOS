@@ -104,7 +104,20 @@ cd D:\gestao-selos
  
  ## Criação dos Relacionamentos
 
- - php artisan make:controller VendedorController
--  php artisan make:controller SeloController
+ - php artisan make:modelVendedor
+ - php artisan make:modelSelo
 
+  ## Criação dos Controllers
+
+ - php artisan make:controller VendedorController
+ - php artisan make:controller SeloController
+
+   ## Seeders para Dados Iniciais
+
+ - php artisan make:seeder VendedorSeeder
+ - php artisan make:seeder SeloSeeder 
+
+ ## Inicializar o Banco de Dados SQL
+
+ - php artisan migrate:fresh --seed  
 
